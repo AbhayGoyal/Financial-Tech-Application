@@ -1,0 +1,71 @@
+drop database serv;
+
+create database serv;
+
+use serv;
+
+create table bankname(
+id int primary key,
+bank varchar(250)
+);
+
+insert into bankname values(1,'Bank of India'); 
+insert into bankname values(2,'ICICICI');
+insert into bankname values(3,'CUB');
+insert into bankname values(4,'OBC');
+insert into bankname values(5,'Bank of Baroda');
+
+create table servlet(
+id int primary key,
+emailid varchar(50),
+username varchar(50) unique,
+pass varchar(8),
+firstname varchar(40),
+lastname varchar(40),
+address varchar(255),
+contactnum bigint(10),
+age int
+);
+
+insert into servlet values(1,'abhaygoyal@gmail.com','qwerty1','2342','abhay','goyal','eyhehdghdth',9876543210,23);
+insert into servlet values(2,'abhaygoyal@gmail.com','qwerty2','2342','abhay','goyal','eyhehdghdth',9876543210,23);
+insert into servlet values(3,'abhaygoyal@gmail.com','qwerty3','2342','abhay','goyal','eyhehdghdth',9876543210,23);
+insert into servlet values(4,'abhaygoyal@gmail.com','qwerty4','2342','abhay','goyal','eyhehdghdth',9876543210,23);
+insert into servlet values(5,'abhaygoyal@gmail.com','qwerty5','2342','abhay','goyal','eyhehdghdth',9876543210,23);
+
+
+create table bankaccount(
+id int primary key,
+accno varchar(8) unique,
+bankname varchar(30)
+)ENGINE=InnoDB;
+
+
+insert into bankaccount values(1,124324,'Bank Of India');
+insert into bankaccount values(2,124322,'ICICIC');
+insert into bankaccount values(3,124325,'CUB');
+insert into bankaccount values(4,124326,'OBC');
+insert into bankaccount values(5,124327,'Bank of Baroda');
+
+create table transactions(
+id int primary key,
+debitamount int,
+creditamount int,
+total decimal(65,2),
+accno varchar(8),
+FOREIGN KEY fk(accno) REFERENCES bankaccount(accno) 
+ON UPDATE CASCADE 
+ON DELETE RESTRICT
+)ENGINE=InnoDB;
+
+insert into transactions values(1,0,2000,2000,124322);
+insert into transactions values(2,0,2000,2000,124325);
+insert into transactions values(3,0,2000,2000,124326);
+insert into transactions values(4,0,2000,2000,124327);
+
+Select transactions.debitamount from transactions,bankaccount where transactions.accno=bankaccount.accno;
+
+select * from transactions;
+
+
+
