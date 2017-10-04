@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+
+.add
+{
+	color: red;
+	text-align: center;
+}
+
+.add1
+{
+	color: red;
+	text-align: center;
+}
+
+body
+{
+	
+	background-repeat: no-repeat;
+	background-origin:content-box;
+	background-size: cover;
+	background-image: url("registerbackground.jpg");
+}
+
+.font
+{
+	color: black;
+	text-align: center;
+}
+
+.button1
+{
+	color: maroon;
+	padding: 10px 24px;
+	border-radius:4px; 
+}
+
+.button2
+{
+	color: maroon;
+	padding: 10px 24px;
+	border-radius:4px; 
+		
+}
+
+.font1
+{
+	border: thick;
+}
+
+.head
+{
+	color: blue;
+	text-align: center;
+	
+}
+
+.firstone
+{
+	color: red;
+}

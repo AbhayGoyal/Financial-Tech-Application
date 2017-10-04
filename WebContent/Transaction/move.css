@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+	background-image: url("move.jpg");
+}
+
+h1
+{
+	font-family: cursive;
+	font-weight: bold;
+	color: white;
+}

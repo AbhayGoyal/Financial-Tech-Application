@@ -1,0 +1,84 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+	background-image: url("loginbackground.jpg");
+	background-position: 30px 50px;
+	background-repeat: no-repeat;
+}
+
+.head
+{
+	text-align: center;
+}
+
+div.for
+{
+	text-align: center;
+	display: block;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.button
+{
+	color: fuchsia;
+	padding: 10px 24px;
+	border-radius:4px; 
+	
+	
+}
+
+div.em
+{
+	text-decoration: underline;
+	font-size: 200%;
+}
+
+div.pa
+{
+	text-decoration: underline;
+	font-size: 150%;
+}
+
+h1{
+	text-align: center;
+}
+
+.nav
+{
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc;
+}
+
+.nav li a 
+{
+		display: block;
+		padding: 8px 15px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #069;
+		border-right: 1px solid #ccc; 
+}
+
+.nav li
+{
+	float: left;
+}
+
+.nav li a:hover {
+		color: #c00;
+		background-color: #fff; }
+

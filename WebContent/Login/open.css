@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+.one
+{
+	color: black;	
+	margin: 50%
+}
+
+.two
+{
+	text-align: center;
+}
+
+body
+{
+	background-color: blue;
+}
+
+html
+{
+	width: 100%;
+	height: 100%;
+}

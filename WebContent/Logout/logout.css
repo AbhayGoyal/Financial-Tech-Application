@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+
+.button1
+{
+	
+	color: maroon;
+	padding: 10px 24px;
+	border-radius:4px; 
+
+}
+
+h1
+{
+	text-align: center;
+	font-family: monospace;
+	color: white;
+	
+}
+
+body
+{
+	background-image: url("logout.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
